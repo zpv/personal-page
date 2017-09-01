@@ -13,7 +13,7 @@ function blinkingTitle() {
 
 var typed = new Typed(".element", {
   // Waits 1000ms after typing "First"
-  strings: ["<h2>Computer Science ^250 and Business ^500 <b>Combined.</h2>", "<h2>Programmer.</h2>", "<h2>Crypto Enthusiast.</h2>", "<h2>Software Engineer.</h2>", "<h2>ITSec is fun.</h2>", "<h2>Risk Taker.</h2>"],
+  strings: ["<h2>Computer Science ^250 and Business ^500 Combined.</h2>", "<h2>Programmer.</h2>", "<h2>Crypto Enthusiast.</h2>", "<h2>Software Engineer.</h2>", "<h2>ITSec is fun.</h2>", "<h2>Risk Taker.</h2>"],
   typeSpeed: 25,
   backSpeed: 25,
   backDelay: 1000,

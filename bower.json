@@ -5,6 +5,9 @@
     "milligram": "latest",
     "typed.js": "^2.0.5",
     "jquery": "^3.2.1",
-    "components-font-awesome": "^4.7.0"
+    "components-font-awesome": "^4.7.0",
+    "bower": "*",
+    "install": "^1.0.4",
+    "tilt.js": "https://github.com/gijsroge/tilt.js.git#master"
   }
 }

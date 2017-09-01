@@ -1,11 +1,13 @@
 'use strict';
 
 let title = document.title;
+let name = document.querySelector('#name b').innerHTML
 let blinked = false;
 
 function blinkingTitle() {
     setTimeout(() => {
         document.title = blinked ? title : (title + "_")
+        document.querySelector('#name b').innerHTML = blinked ? name : (name + "_")
         blinked = !blinked
         blinkingTitle()
     }, 1000);

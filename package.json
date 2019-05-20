@@ -1,38 +1,49 @@
 {
-	"name": "milligram-starter",
-	"version": "0.0.6",
-	"description": "A super simple boilerplate project with Milligram.",
-	"homepage": "https://milligram.github.io",
-	"repository": "milligram/milligram-starter",
-	"license": "MIT",
-	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
-	"private": "true",
-	"engines": {
-		"node": ">=4"
-	},
-	"dependencies": {
-		"milligram": "latest",
-		"node-sass": "^4.5.3",
-		"tilt.js": "^1.1.21",
-		"typed.js": "^2.0.5"
-	},
-	"devDependencies": {
-		"bower": "^1.8.0",
-		"browser-sync": "^2.18.2",
-		"ncp": "^2.0.0",
-		"npm-run-all": "^3.1.2",
-		"onchange": "^3.2.0",
-		"rimraf": "^2.5.4"
-	},
-	"scripts": {
-		"start": "run-s clean build bower && run-p watch serve",
-		"clean": "rimraf dist",
-		"bower": "ncp bower_components dist/lib",
-		"build": "ncp src dist",
-		"watch": "onchange src/* -- run-s build",
-		"serve": "browser-sync --no-notify start -s dist -f dist",
-		"test": "run-s clean build bower",
-		"postinstall": "bower i",
-		"prestart": "npm i"
-	}
+  "name": "personal-page",
+  "version": "2.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.0.3",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "prettier-eslint": "^8.8.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.32.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zpv/personal-page.git"
+  },
+  "author": "Steven Z.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zpv/personal-page/issues"
+  },
+  "homepage": "https://github.com/zpv/personal-page#readme"
 }
